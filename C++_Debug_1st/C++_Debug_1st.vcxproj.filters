@@ -13,17 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="DebugSystem">
-      <UniqueIdentifier>{0c06f6ac-6033-4d01-9a11-76e21d498b30}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LogSystem">
-      <UniqueIdentifier>{102b13fe-6786-4e3e-b91b-9da6aea429b8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AssertSystem">
-      <UniqueIdentifier>{b363f271-7a4b-47e3-8b60-6a38d98b34f0}</UniqueIdentifier>
+      <UniqueIdentifier>{3e5c44c6-f70e-4d48-a123-04f6e8e4a35b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\LogSystem\LogBuilder.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
     <ClInclude Include="..\LogSystem\LogFormatterBase.h">
       <Filter>LogSystem</Filter>
     </ClInclude>
@@ -33,10 +30,19 @@
     <ClInclude Include="..\LogSystem\LoggerManager.h">
       <Filter>LogSystem</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\logLevel.h">
+    <ClInclude Include="..\LogSystem\LogLevel.h">
       <Filter>LogSystem</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogRecord.h">
+    <ClInclude Include="..\LogSystem\LogRecordMap.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LogSystem\LogType.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LogSystem\LogContext.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LogSystem\ヘッダー.h">
       <Filter>LogSystem</Filter>
     </ClInclude>
   </ItemGroup>

@@ -18,17 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\LogSystem\LogFormatterBase.h" />
-    <ClInclude Include="..\LogSystem\LoggerBase.h" />
-    <ClInclude Include="..\LogSystem\LoggerManager.h" />
-    <ClInclude Include="..\LogSystem\logLevel.h" />
-    <ClInclude Include="..\LogSystem\LogRecord.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0d489813-4584-40b8-99a4-8cea2cd3d3f4}</ProjectGuid>
+    <ProjectGuid>{b2211ab8-5bd0-4b62-b1c1-dc24b3a697db}</ProjectGuid>
     <RootNamespace>CDebug1st</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -84,7 +77,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +123,17 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LogSystem\LogBuilder.h" />
+    <ClInclude Include="..\LogSystem\LogContext.h" />
+    <ClInclude Include="..\LogSystem\LogFormatterBase.h" />
+    <ClInclude Include="..\LogSystem\LoggerBase.h" />
+    <ClInclude Include="..\LogSystem\LoggerManager.h" />
+    <ClInclude Include="..\LogSystem\LogLevel.h" />
+    <ClInclude Include="..\LogSystem\LogRecordMap.h" />
+    <ClInclude Include="..\LogSystem\LogType.h" />
+    <ClInclude Include="..\LogSystem\ヘッダー.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

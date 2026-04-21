@@ -1,6 +1,4 @@
 #pragma once
-#include<string>
-#include <string_view>
 
 //@brief	ログレベル
 namespace LogLevel {
@@ -13,25 +11,14 @@ namespace LogLevel {
 	};
 
 	//@brief	ログレベル変換関数
-	static std::string_view ToString(Loglevel level) {
-		std::string str{};
+	static constexpr const char* ToString(const Loglevel& level) {
 		switch (level)
 		{
-		case LogLevel::Loglevel::Info:
-			str = "[ Info ]";
-			return str;
-		case LogLevel::Loglevel::Warning:
-			str = "[ Warning ]";
-			return str;
-		case LogLevel::Loglevel::Error:
-			str = "[ Error ]";
-			return str;
-		case LogLevel::Loglevel::Unknown:
-			str = "[ Unknown ]";
-			return str;
-		default:
-			str = "[  ]";
-			return str;
+		case Loglevel::Info:		return "[ Info ]";
+		case Loglevel::Warning:		return "[ Warning ]";
+		case Loglevel::Error:		return "[ Error ]";
+		case Loglevel::Unknown:		return "[ Unknown ]";
+		default:					return "[  ]";
 		}
 	}
 }
