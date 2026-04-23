@@ -108,7 +108,7 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -128,6 +128,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Assert\Assert.h" />
+    <ClInclude Include="..\Debug\Debug.h" />
+    <ClInclude Include="..\Log\Console_Logger.h" />
     <ClInclude Include="..\Log\DebugWindow_Logger.h" />
     <ClInclude Include="..\Log\LogBuilder.h" />
     <ClInclude Include="..\Log\LoggerBase.h" />
@@ -137,6 +140,7 @@
     <ClInclude Include="..\Log\Log_Struct_Parts.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Log\Console_Logger.cpp" />
     <ClCompile Include="..\Log\DebugWIndow_Logger.cpp" />
     <ClCompile Include="..\main.cpp" />
   </ItemGroup>

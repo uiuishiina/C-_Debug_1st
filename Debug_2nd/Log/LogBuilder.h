@@ -4,7 +4,7 @@
 
 //ログ構造体のパーツの概念
 template<typename T>
-concept Log_Struct_Parts = std::is_same_v<T, Log::Header::Hedder>;
+concept Log_Struct_Parts = std::is_same_v<T, Log::Header::Header>;
 
 //ログビルダークラス
 class LogBuilder final

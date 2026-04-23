@@ -48,13 +48,13 @@ namespace Log
 		}
 
 		//ヘッダー構造体...入力されたデータを識別するための構造体。最終的にはRecordのヘッダーマップに変換される
-		class Hedder {
+		class Header {
 			Type type;	//ヘッダーの種類
 			std::string value;	//ヘッダーの値
 		public:
 			//コンストラクタ
-			Hedder() = delete;	//デフォルトコンストラクタは削除
-			Hedder(Type t, const std::string& v) : type(t), value(v) {}	//種類と値を指定して初期化
+			Header() = delete;	//デフォルトコンストラクタは削除
+			Header(Type t, const std::string& v) : type(t), value(v) {}	//種類と値を指定して初期化
 
 			constexpr Type get_type() const { return type; }
 			const std::string& get_value() const { return value; }

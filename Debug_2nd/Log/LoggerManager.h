@@ -1,6 +1,7 @@
 #pragma once
 #include"LoggerBase.h"
 #include"DebugWindow_Logger.h"
+#include"Console_Logger.h"
 #include<memory>
 #include<vector>
 
@@ -20,6 +21,7 @@ public:
 	void Initialize()
 	{
 		loggers.push_back(std::make_unique<DebugWindow_Logger>());	//デバッグウィンドウロガーを追加
+		// loggers.push_back(std::make_unique<Console_Logger>());	//デバッグウィンドウロガーを追加
 		for (const auto& logger : loggers) {
 			logger->Initialize();	//各ロガーを初期化
 		}

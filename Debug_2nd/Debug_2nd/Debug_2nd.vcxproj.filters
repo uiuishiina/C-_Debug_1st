@@ -16,6 +16,12 @@
     <Filter Include="Log">
       <UniqueIdentifier>{da054a11-3995-472a-b636-ba4ff9958bbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assert">
+      <UniqueIdentifier>{956cab6d-5255-4886-a709-559bf82fd7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{ace8a35c-d8f9-48bb-8b79-1264de3be008}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Log\LogBuilder.h">
@@ -39,6 +45,15 @@
     <ClInclude Include="..\Log\LogMacro.h">
       <Filter>Log</Filter>
     </ClInclude>
+    <ClInclude Include="..\Log\Console_Logger.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Assert\Assert.h">
+      <Filter>Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Log\DebugWIndow_Logger.cpp">
@@ -46,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="..\main.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\Console_Logger.cpp">
+      <Filter>Log</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
