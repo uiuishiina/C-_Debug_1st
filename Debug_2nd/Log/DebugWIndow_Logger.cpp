@@ -14,10 +14,7 @@ void DebugWindow_Logger::output(std::string_view message)
 //指定された長さの区切り線を生成する関数
 std::string Line(int length)
 {
-	std::string line;
-	for (int i = 0; i < length; ++i) {
-		line += "=";
-	}
+	std::string line(50, '=');
 	return line;
 }
 
