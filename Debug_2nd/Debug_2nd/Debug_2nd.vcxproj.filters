@@ -22,6 +22,9 @@
     <Filter Include="Debug">
       <UniqueIdentifier>{ace8a35c-d8f9-48bb-8b79-1264de3be008}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Checker">
+      <UniqueIdentifier>{121eb6b6-8212-4dc8-9dac-1b8eb1405d0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Log\LogBuilder.h">
@@ -51,8 +54,11 @@
     <ClInclude Include="..\Assert\Assert.h">
       <Filter>Assert</Filter>
     </ClInclude>
-    <ClInclude Include="..\Assert\Checker.h">
-      <Filter>Assert</Filter>
+    <ClInclude Include="..\Checker\Checker.h">
+      <Filter>Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Checker\Checker_Struct_Parts.h">
+      <Filter>Checker</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
