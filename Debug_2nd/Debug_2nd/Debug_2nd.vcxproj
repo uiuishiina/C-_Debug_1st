@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Assert\Assert.h" />
-    <ClInclude Include="..\Debug\Debug.h" />
+    <ClInclude Include="..\Assert\Checker.h" />
     <ClInclude Include="..\Log\Console_Logger.h" />
     <ClInclude Include="..\Log\DebugWindow_Logger.h" />
     <ClInclude Include="..\Log\LogBuilder.h" />

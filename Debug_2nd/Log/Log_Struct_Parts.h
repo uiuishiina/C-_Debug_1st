@@ -13,7 +13,7 @@ namespace Log
 		//レベルの種類
 		enum struct Level
 		{
-			Info, Error
+			Info, Warning, Error
 		};
 		//レベルがエラーかどうかを判定する関数
 		constexpr bool is_error(Level l)

@@ -51,8 +51,8 @@
     <ClInclude Include="..\Assert\Assert.h">
       <Filter>Assert</Filter>
     </ClInclude>
-    <ClInclude Include="..\Debug\Debug.h">
-      <Filter>Debug</Filter>
+    <ClInclude Include="..\Assert\Checker.h">
+      <Filter>Assert</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
