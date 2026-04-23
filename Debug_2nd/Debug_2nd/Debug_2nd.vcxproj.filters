@@ -13,37 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="LogSystem">
-      <UniqueIdentifier>{3e5c44c6-f70e-4d48-a123-04f6e8e4a35b}</UniqueIdentifier>
+    <Filter Include="Log">
+      <UniqueIdentifier>{da054a11-3995-472a-b636-ba4ff9958bbc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\LogSystem\LogBuilder.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\LogBuilder.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogFormatterBase.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\Log_Struct_Parts.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LoggerBase.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\Log_pipline.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LoggerManager.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\LoggerManager.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogLevel.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\LoggerBase.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogRecordMap.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\DebugWindow_Logger.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogType.h">
-      <Filter>LogSystem</Filter>
+    <ClInclude Include="..\Log\LogMacro.h">
+      <Filter>Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\LogSystem\LogContext.h">
-      <Filter>LogSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="..\LogSystem\ヘッダー.h">
-      <Filter>LogSystem</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Log\DebugWIndow_Logger.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
